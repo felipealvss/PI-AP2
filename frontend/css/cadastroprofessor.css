@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    color: greenyellow;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+a:active {
+    position: relative;
+    top: 3px;
+    box-shadow: none;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+body h1 {
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+}
+
+nav {
+    background-color: #444;
+    float: left;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+section {
+    width: 100%;
+    padding: 20px 0;
+    float: left;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menu li {
+    color: #fff;
+    margin-top: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    width: 200px;
+    padding: 10px 0;
+    background-color: #777;
+    border-radius: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #ddd;
+    background-color: #2a578b;
+    color: #fff;
+    cursor: pointer;
+}
+
+.campo {
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.rodape {
+    background-color: #303036;
+    color: #d3d3d3;
+    display: flex;
+    height: 190px;
+    padding-top: 20px;
+}
+
+.content {
+    width: 33%;
+    margin: 10px;
+    text-align: center;
+}
+
+.content a {
+    color: #999;
+}
+
+.f-bottom {
+    background: #777;
+    color: #161313;
+    height: 30%;
+    width: 100%;
+    text-align: center;
+}
+
+.img-logo {
+    width: 105%;
+}
+
+/**MODAL - JS**/
+
+.modal-container{
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal-container.ativo{
+    display: flex;
+}
+
+@keyframes modal {
+    from{
+      opacity: 0;
+      transform: translate3d(0, -30px, 0);
+    }
+    to{
+      opacity: 1;
+      transform: translate3d(0,0,0);
+    }
+  }
+.ativo .modal{
+    animation: modal .5s forwards;
+}
+
+.modal{
+    background-color: #FFF;
+    min-width: 300px;
+    padding: 40px;
+    border: 10px solid #5f9ea0;
+    box-shadow: 0 0 0 10px #FFF;
+    position: relative;
+}
+.fecha{
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background-color: #5f9ea0;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #FFF;
+    font-family: 'IBM Plex Mono', monospace;
+}
+

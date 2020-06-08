@@ -1,0 +1,184 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../img/quadra.jpg);
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.cabecalho-logo{
+    width: 100%;
+}
+.logo img{
+    display: block;
+    width: 100%;
+}
+.logo{
+    max-width: 300px;
+    margin: 0 auto;
+    animation: showUp .8s forwards;
+}
+
+@keyframes showUp {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -40px, 0)
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+.logo img {
+    display: block;
+}
+
+.login {
+    width: 320px;
+    height: 410px;
+    border: 5px solid #000;
+    border-radius: 100px 60px 100px 60px;
+    color: #fff;
+    background-color: cadetblue;
+    top: 63%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 68px 28px;
+}
+
+.usuario {
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: 112px;
+    animation: showRigth .8s forwards;
+}
+
+@keyframes showRigth {
+    from{
+        opacity: 0;
+        transform: translate3d(-50px, 0, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+h1 {
+    margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+    padding-bottom: 25px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+}
+
+.login p {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.login input {
+    width: 100%;
+    margin-bottom: 21px;
+}
+
+.login input[type="text"], input[type="password"] {
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline: none;
+    height: 30px;
+    color: white;
+    font-size: 16px;
+}
+
+.login input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 35px;
+    color: #000;
+    background: #fff;
+    border-radius: 20px;
+    transition: 0.2s;
+}
+
+.login input[type="submit"]:hover {
+    cursor: pointer;
+    background: #ff4d4d;
+    transition: 0.2s;
+}
+
+.login a {
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #4b4b4b;
+    transition: 0.2s;
+}
+
+.login a:hover {
+    transition: 0.2s;
+    color: #ff4d4d;
+}
+.modal-container{
+    height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0, .5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20000;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.modal-container.ativo{
+    display: flex;
+}
+@keyframes modal {
+    from{
+      opacity: 0;
+      transform: translate3d(0, -30px, 0);
+    }
+    to{
+      opacity: 1;
+      transform: translate3d(0,0,0);
+    }
+  }
+.ativo .modal{
+    animation: modal .5s forwards;
+}
+
+.modal{
+    background-color: #FFF;
+    min-width: 300px;
+    padding: 40px;
+    border: 10px solid #5f9ea0;
+    box-shadow: 0 0 0 10px #FFF;
+    position: relative;
+}
+.fecha{
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    background-color: #5f9ea0;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, .3);
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #FFF;
+    font-family: 'IBM Plex Mono', monospace;
+}

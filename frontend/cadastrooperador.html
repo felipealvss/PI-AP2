@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr"> 
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/cadastrooperador.css">
+        <meta charset="utf-8">
+        <title>Cadastro de Operadores</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cadastro.html">Cadastros</a></li>
+                    <li><a href="agendamento.html">Agendamentos</a></li>
+                    <li><a href="historico.html">Historico de Reserva</a></li>
+                </ul>
+            </nav>
+            <section>
+                <h1>Cadastro de Operadores (Funcionarios do Sistema)</h1>
+                <hr><br><br>
+                <form method="POST" action="">
+                    Nome Completo<br>
+                    <input type="text" name="nome" class="campo" maxlength="40" required autofocus><br>
+                    Email Institucional<br>
+                    <input type="text" name="email" class="campo" maxlength="40" required><br>
+                    Telefone<br>
+                    <input type="text" name="telefone" class="campo" maxlength="40" required><br><br>
+                    <input type="submit" value="Salvar" class="btn">
+                    <input type="reset" value="Limpar" class="btn">
+                </form>
+            </section>
+        </div>
+        <div class="rodape">
+            <div class="content">
+                <img class="img-logo" src="img/logo.png" alt="Logo da Unifametro">
+            </div>
+            <div class="content">
+                <article>
+                    <p>LINKS UTEIS</p><br>
+                    <a href="#">Conheça nossa Empresa</a><br>
+                    <a href="#">Seja um Patrocinador</a><br>
+                    <a href="#">Trabalhe Conosco</a>
+                </article>
+            </div>
+            <div class="content">
+                <article>
+                    <p>REDES SOCIAIS</p><br>
+                    <a href="#">Facebook</a><br>
+                    <a href="#">LinkedIn</a><br>
+                    <a href="#">Instagram</a>
+                </article>
+            </div>
+        </div>
+        <footer class="f-bottom">
+            <address>Copyright@ | Criado por Ednylton Santos</address>
+        </footer>
+        <section class="modal-container" data-modal="container">
+            <div class="modal">
+                <button data-modal="fecha" class="fecha">X</button>
+                <h4>Função não disponível</h4>
+            </div>
+        </section>
+        <script src="js/Login.js"></script>
+    </body>
+</html>

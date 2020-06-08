@@ -1,0 +1,16 @@
+
+Entidades:
+- unidade;
+- Quadra;
+- Professor;
+- operador;
+- Calendário Acadêmico;
+
+Funcionalidades:
+- Cadastro de unidade;
+- Cadastro de Quadra por unidade;
+- Cadastro de Professor;
+- Cadastro de operador;
+- Cadastro de Calendário Acadêmico;
+- Cadastro de Agendamento de quadra;
+- Listagem de Agendamento de quadra;
